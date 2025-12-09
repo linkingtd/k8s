@@ -397,3 +397,17 @@ ansible-playbook reset.yml -i inventory -l ${IP} -e "flush_iptables=true"
 - 如果你觉得本项目还不错，可以通过 Star 来表示你的喜欢
 - 在公司或个人项目中使用，并帮忙推广给伙伴使用
 
+xcall yum install zip unzip tar wget -y
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+nameserver 114.114.114.114
+nameserver 223.5.5.5
+
+
+192.168.0.134 node-01
+192.168.0.135 node-02
+192.168.0.113 node-03

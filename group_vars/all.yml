@@ -257,8 +257,8 @@ calico:
   # mtu 默认为0，表示自动自动检测
   mtu: 0
   # 可指定网卡interface=eth.*或使用can-reach=网关
-  ip_autodetection_method: interface=eth0
-  ipv6_autodetection_method: interface=eth0
+  ip_autodetection_method: interface=enp3s0
+  ipv6_autodetection_method: interface=enp3s0
 
 kuberouter:
   # https://github.com/cloudnativelabs/kube-router

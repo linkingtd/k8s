@@ -1,0 +1,7 @@
+# cat xcall
+#! /bin/bash
+for i in node-03 node-02 node-01
+do
+  echo --------- $i ----------
+  ssh $i "$*"
+done
