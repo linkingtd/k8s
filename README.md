@@ -402,12 +402,20 @@ xcall yum install zip unzip tar wget -y
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 
-nameserver 8.8.8.8
-nameserver 8.8.4.4
 nameserver 114.114.114.114
 nameserver 223.5.5.5
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+
 
 
 192.168.0.134 node-01
 192.168.0.135 node-02
 192.168.0.113 node-03
+
+
+
+ansible-playbook download.yml
+ansible-playbook cluster.yml -i inventory --skip-tags=haproxy,keepalived
+
